@@ -206,7 +206,7 @@ public class Login extends Activity {
            pDialog.dismiss();//ocultamos progess dialog.
            Log.e("onPostExecute=",""+result);
            
-           if (result.equals("ok")){
+           if (result.equals("Ok")){//Segun result envia un "Ok" y no un "ok"
 
 				Intent i=new Intent(Login.this, HiScreen.class);
 				i.putExtra("user",user);
